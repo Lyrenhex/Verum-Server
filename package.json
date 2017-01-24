@@ -1,0 +1,22 @@
+{
+  "name": "verum-server",
+  "version": "0.0.1",
+  "description": "Official Verum Node program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freechat-project/Verum-Server.git"
+  },
+  "author": "Damian Heaton <dh64784@gmail.com> (damianheaton.com)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/freechat-project/Verum-Server/issues"
+  },
+  "homepage": "https://github.com/freechat-project/Verum-Server#readme",
+  "dependencies": {
+    "verum": "0.0.1-b"
+  }
+}
