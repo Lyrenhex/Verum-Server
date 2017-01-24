@@ -16,26 +16,27 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-const verumServ = require("verum").Server;
-const fs = require("fs");
-const readline = require("readline");
+const verumServ = require("verum").Server; // server module, as publicly provided by FreeChat (https://npmjs.com/package/verum)
+const fs = require("fs"); // data persistence
+const readline = require("readline"); // request input
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
+// read from persisted config, if any
 fs.readFile ("conf.json", (err, data) => {
   var config = {};
-  if (!err) {
+  if (!err) { // we read the file. yay
     config = JSON.parse(data);
-    start(config);
-  } else {
+    start(config); // pass the new config straight to the server instance
+  } else { // no dice. ask the user?
     rl.question("Server Port: (9873) ", (answer) => {
       config.port = answer;
-      if (config.port === "") config.port = 9873;
+      if (config.port === "") config.port = 9873; // if the user just hit enter for the default, set the default.
 
-      start(config);
+      start(config); // pass config to the server instance.
 
       rl.close();
     });
@@ -43,5 +44,5 @@ fs.readFile ("conf.json", (err, data) => {
 });
 
 function start (config) {
-  var serv = new verumServ (config.port, (config.port !== undefined && config.public !== undefined) ? config : null);
+  var serv = new verumServ (config.port, (config.source !== undefined && config.public !== undefined) ? config : null); // create the server instance, but if either config.source or config.public is not set, use default config values (as specified by the use of null)
 }

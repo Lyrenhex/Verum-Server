@@ -13,3 +13,12 @@ In order to preserve user security, **all Nodes should adhere to the following s
 ## Usage
 
 Verum Nodes are used by users to keep hold of their Public Key and allow contact from other Verum users. The same user may be registered on multiple Verum Nodes, and Nodes are not tracked nor indexed officially (in effect, it's _almost_ peer-to-peer networking). Rather, users must be identified by _user_@_node_, such that _node_ is a domain / IP address of a Node, which Verum clients will connect to to send messages to _user_ on that _node_.
+
+## Running a Node
+
+**Warning: Verum Nodes are _not_ yet ready for public use.** You may use this if you wish, but be aware that it is still early in development and may not actually work as it should do eventually.
+
+These instructions require Node.JS to be installed on your system, and that you have already cloned the repository.
+
+1. Run `npm install` to install required dependencies (`verum`).
+2. Run `npm test` to run the program (`npm start` is an alias for `npm test`)

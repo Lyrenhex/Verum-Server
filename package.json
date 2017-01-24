@@ -4,7 +4,8 @@
   "description": "Official Verum Node program.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "npm test"
   },
   "repository": {
     "type": "git",
