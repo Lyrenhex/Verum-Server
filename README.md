@@ -22,3 +22,19 @@ These instructions require Node.JS to be installed on your system, and that you 
 
 1. Run `npm install` to install required dependencies (`verum`).
 2. Run `npm test` to run the program (`npm start` is an alias for `npm test`)
+
+## Updating a Node
+
+**Be warned that these instructions are pretty much guaranteed to wipe all user data! Make sure to back up Node data before doing this.**
+
+You should have `npm-check-updates` installed. Do `[sudo] npm install npm-check-updates -g` if not.
+
+1. Back up all (if any) Node Data:
+  - config.json
+  - users.json
+  - **NODE DATA SHOULD NOT BE BACKED UP IN THE FOLDER THAT THE SERVER OPERATES OUT OF, OR IN ANY CHILD FOLDERS. IT SHOULD BE BACKED UP HIGHER INTO THE FILE PATH; IT WILL BE WIPED OTHERWISE DURING UPDATE.**
+2. Fetch the new version of Verum-Server from the GitHub master branch (**Warning: will delete all data.**): (these instructions assume that you're running the standard Node code provided here, which creates config files and user data files for your Node)
+  1. Run `git fetch --all`
+  2. Run `git reset --hard origin/master`
+3. Your user data will now be wiped. Restore it from the backup you made previously.
+4. Run `npm test` or `npm start` as usual to run the Node.
