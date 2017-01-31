@@ -27,8 +27,6 @@ These instructions require Node.JS to be installed on your system, and that you 
 
 **Be warned that these instructions are pretty much guaranteed to wipe all user data! Make sure to back up Node data before doing this.**
 
-You should have `npm-check-updates` installed. Do `[sudo] npm install npm-check-updates -g` if not.
-
 1. Back up all (if any) Node Data:
   - config.json
   - users.json
