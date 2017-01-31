@@ -29,6 +29,8 @@ These instructions require Node.JS to be installed on your system, and that you 
 
 **Be warned that these instructions are pretty much guaranteed to wipe all user data! Make sure to back up Node data before doing this.**
 
+The data warnings only technically apply if Git is tracking your conf.json and users.json files... Which is probably isn't. Still, be careful!
+
 1. Back up all (if any) Node Data:
   - conf.json
   - users.json
@@ -38,4 +40,5 @@ These instructions require Node.JS to be installed on your system, and that you 
   1. Run `git fetch --all`
   2. Run `git reset --hard origin/master`
 3. Your user data will now be wiped. Restore it from the backup you made previously.
+4. Run `npm update` to make sure that your dependencies are the correct versions.
 4. Run `npm test` or `npm start` as usual to run the Node.
