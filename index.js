@@ -44,5 +44,6 @@ fs.readFile ("conf.json", (err, data) => {
 });
 
 function start (config) {
-  var serv = new verumServ (config.port, (config.source !== undefined && config.public !== undefined) ? config : null); // create the server instance, but if either config.source or config.public is not set, use default config values (as specified by the use of null)
+  var serv = new verumServ ((config.source !== undefined && config.public !== undefined) ? config : null); // create the server instance, but if either config.source or config.public is not set, use default config values (as specified by the use of null)
+  serv.listen(config.port);
 }
