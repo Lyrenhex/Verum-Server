@@ -1,4 +1,6 @@
 # Verum Server
+
+[![Join the chat at https://gitter.im/freechat-project/Verum-Server](https://badges.gitter.im/freechat-project/Verum-Server.svg)](https://gitter.im/freechat-project/Verum-Server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Code for a Verum Node. Can be used to start up a new Node.
 
 ## Verum Node Rules
