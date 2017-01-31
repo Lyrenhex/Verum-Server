@@ -23,7 +23,7 @@ Verum Nodes are used by users to keep hold of their Public Key and allow contact
 These instructions require Node.JS to be installed on your system, and that you have already cloned the repository.
 
 1. Run `npm install` to install required dependencies (`verum`).
-2. Run `npm test` to run the program (`npm start` is an alias for `npm test`)
+2. Run `npm start` to run the program
 
 ## Updating a Node
 
@@ -41,4 +41,4 @@ The data warnings only technically apply if Git is tracking your conf.json and u
   2. Run `git reset --hard origin/master`
 3. Your user data will now be wiped. Restore it from the backup you made previously.
 4. Run `npm update` to make sure that your dependencies are the correct versions.
-4. Run `npm test` or `npm start` as usual to run the Node.
+4. Run `npm start` as usual to run the Node.

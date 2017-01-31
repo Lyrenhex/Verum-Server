@@ -4,8 +4,8 @@
   "description": "Official Verum Node program.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "start": "npm test"
+    "test": "node index.js --travis-ci",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

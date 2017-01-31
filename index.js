@@ -43,6 +43,12 @@ fs.readFile ("conf.json", (err, data) => {
   }
 });
 
+if(process.argv.indexOf("--travis-ci") !== -1){
+  setTimeout(function() {
+    process.exit(); // at this point, the server should be starting up fine. :)
+  }, 10000);
+}
+
 function start (config) {
   var serv = new verumServ (config.port, (config.source !== undefined && config.public !== undefined) ? config : null); // create the server instance, but if either config.source or config.public is not set, use default config values (as specified by the use of null)
   serv.listen();
