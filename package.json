@@ -1,6 +1,6 @@
 {
   "name": "verum-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Official Verum Node program.",
   "main": "index.js",
   "scripts": {

@@ -32,7 +32,7 @@ fs.readFile ("conf.json", (err, data) => {
     config = JSON.parse(data);
     start(config); // pass the new config straight to the server instance
   } else { // no dice. ask the user?
-    rl.question("Server Port: (9873) ", (answer) => {
+    rl.question("Server Port: (9873) ", function(answer){
       config.port = answer;
       if (config.port === "") config.port = 9873; // if the user just hit enter for the default, set the default.
 
