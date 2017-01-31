@@ -28,7 +28,7 @@ These instructions require Node.JS to be installed on your system, and that you 
 **Be warned that these instructions are pretty much guaranteed to wipe all user data! Make sure to back up Node data before doing this.**
 
 1. Back up all (if any) Node Data:
-  - config.json
+  - conf.json
   - users.json
   - **NODE DATA SHOULD NOT BE BACKED UP IN THE FOLDER THAT THE SERVER OPERATES OUT OF, OR IN ANY CHILD FOLDERS. IT SHOULD BE BACKED UP HIGHER INTO THE FILE PATH; IT WILL BE WIPED OTHERWISE DURING UPDATE.**
   - "Someone should have told them that the warnings come *after* the instructions" - not today, Dr. Strange.
