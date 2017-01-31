@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/freechat-project/Verum-Server#readme",
   "dependencies": {
-    "verum": "^0.0.3"
+    "verum": "^0.0.4"
   }
 }
