@@ -10,7 +10,7 @@ In order to preserve user security, **all Nodes should adhere to the following s
 - Messages should *only* be stored **during transit**. Once the messages have been sent to their recipient, they should be irrevocably deleted.
 - Messages should be encrypted at rest. Compliancy with the first rule with messages from a secure client make compliancy with this default (and almost impossible not to do).
 
-**Key point:** Verum Nodes store no Secret Keys whatsoever, only Public Keys.
+**Key point:** Verum Nodes store no Secret Keys whatsoever, only Public Keys. They should also never come into contact with a Secret Key: if one does, **please report it!**
 
 ## Usage
 
@@ -18,7 +18,7 @@ Verum Nodes are used by users to keep hold of their Public Key and allow contact
 
 ## Running a Node
 
-**Warning: Verum Nodes are _not_ yet ready for public use.** You may use this if you wish, but be aware that it is still early in development and may not actually work as it should do eventually.
+You may use this if you wish, but be aware that it is still early in development and may not actually work as it should do eventually.
 
 These instructions require Node.JS to be installed on your system, and that you have already cloned the repository.
 
