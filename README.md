@@ -18,8 +18,6 @@ Verum Nodes are used by users to keep hold of their Public Key and allow contact
 
 ## Running a Node
 
-You may use this if you wish, but be aware that it is still early in development and may not actually work as it should do eventually.
-
 These instructions require Node.JS to be installed on your system, and that you have already cloned the repository.
 
 1. Run `npm install` to install required dependencies (`verum`).
