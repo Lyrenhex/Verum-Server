@@ -31,12 +31,12 @@ These instructions require Node.JS to be installed on your system, and that you 
 
 The data warnings only technically apply if Git is tracking your conf.json and users.json files... Which is probably isn't. Still, be careful!
 
+Be aware that the Verum Node program operates on a very much "rolling release" system, in which updates may be pushed frequently. It's **extremely advisable** for Nodes to keep up-to-date (or, at least, to keep their dependencies up-to-date).
+
 1. Back up all (if any) Node Data:
   - conf.json
   - users.json
-  - **NODE DATA SHOULD NOT BE BACKED UP IN THE FOLDER THAT THE SERVER OPERATES OUT OF, OR IN ANY CHILD FOLDERS. IT SHOULD BE BACKED UP HIGHER INTO THE FILE PATH; IT WILL BE WIPED OTHERWISE DURING UPDATE.**
-  - "Someone should have told them that the warnings come *after* the instructions" - not today, Dr. Strange.
-2. Fetch the new version of Verum-Server from the GitHub master branch (**Warning: will delete all data.**): (these instructions assume that you're running the standard Node code provided here, which creates config files and user data files for your Node)
+2. Fetch the new version of Verum-Server from the GitHub master branch: (these instructions assume that you're running the standard Node code provided here, which creates config files and user data files for your Node)
   1. Run `git fetch --all`
   2. Run `git reset --hard origin/master`
 3. Your user data will now be wiped. Restore it from the backup you made previously.
